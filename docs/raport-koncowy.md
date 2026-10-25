@@ -2,7 +2,7 @@
 
 | Identyfikator | Wersja | Autor | Data | Status |
 |---|---|---|---|---|
-| APT-DOC-014 | 1.0 | Kamil Wieckowski | 2026-10-25 | Zatwierdzony |
+| APT-DOC-014 | 1.1 | Kamil Wieckowski | 2026-10-25 | Zatwierdzony |
 
 Struktura raportu opiera się na wytycznych zamknięcia projektu z normy **ISO 21513**
 (cel, rezultaty, porównanie z planem, wpływ, wnioski).
@@ -107,3 +107,4 @@ Szczegółowe wnioski procesowe opisuje [APT-DOC-015 Lessons learned](lessons-le
 | Wersja | Data | Autor | Opis |
 |---|---|---|---|
 | 1.0 | 2026-10-25 | Kamil Wieckowski | Pierwsza wersja |
+| 1.1 | 2026-10-25 | Kamil Wieckowski | Dodano link do publicznego demo (Render) |

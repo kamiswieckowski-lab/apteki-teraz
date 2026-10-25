@@ -5,7 +5,7 @@
 
 | Identyfikator | Wersja | Autor | Data | Status |
 |---|---|---|---|---|
-| APT-DOC-001 | 1.0 | Kamil Wieckowski | 2026-10-25 | Zatwierdzony |
+| APT-DOC-001 | 1.1 | Kamil Wieckowski | 2026-10-25 | Zatwierdzony |
 
 **Która apteka jest otwarta teraz, w nocy albo w niedzielę?** Apteki Teraz to otwarta wyszukiwarka
 ok. 12 tys. aptek i punktów aptecznych w Polsce, zbudowana na oficjalnym **Rejestrze Aptek**
@@ -158,3 +158,4 @@ Kod udostępniamy na licencji [MIT](LICENSE).
 | Wersja | Data | Autor | Opis |
 |---|---|---|---|
 | 1.0 | 2026-10-25 | Kamil Wieckowski | Pierwsza wersja |
+| 1.1 | 2026-10-25 | Kamil Wieckowski | Instrukcja wdrożenia na Render i link do publicznego demo |

@@ -2,7 +2,7 @@
 
 | Identyfikator | Wersja | Autor | Data | Status |
 |---|---|---|---|---|
-| APT-DOC-004 | 1.0 | Kamil Wieckowski | 2026-10-25 | Zatwierdzony |
+| APT-DOC-004 | 1.1 | Kamil Wieckowski | 2026-10-25 | Zatwierdzony |
 
 Format zgodny z [Keep a Changelog](https://keepachangelog.com/pl/1.1.0/), wersjonowanie
 według [Semantic Versioning](https://semver.org/lang/pl/).
@@ -26,3 +26,10 @@ według [Semantic Versioning](https://semver.org/lang/pl/).
 - Docker, docker compose, CI w GitHub Actions (lint, testy, build i smoke test obrazu).
 - Blueprint `render.yaml` do darmowego wdrożenia na Render.com.
 - Dokumentacja: raport końcowy (ISO 21513), lessons learned (PMI), rejestr dokumentów (ISO 10013).
+
+## Historia zmian dokumentu
+
+| Wersja | Data | Autor | Opis |
+|---|---|---|---|
+| 1.0 | 2026-10-25 | Kamil Wieckowski | Pierwsza wersja |
+| 1.1 | 2026-10-25 | Kamil Wieckowski | Wpisy o blueprincie Render i publicznym demo |

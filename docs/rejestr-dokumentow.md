@@ -2,7 +2,7 @@
 
 | Identyfikator | Wersja | Autor | Data | Status |
 |---|---|---|---|---|
-| APT-DOC-010 | 1.0 | Kamil Wieckowski | 2026-10-25 | Zatwierdzony |
+| APT-DOC-010 | 1.1 | Kamil Wieckowski | 2026-10-25 | Zatwierdzony |
 
 ## Zasady kontroli dokumentów (wg ISO 10013)
 
@@ -21,15 +21,15 @@
 
 | ID | Dokument | Plik | Wersja | Data | Autor | Status |
 |---|---|---|---|---|---|---|
-| APT-DOC-001 | README: opis projektu, dane, uruchomienie | [README.md](../README.md) | 1.0 | 2026-10-25 | Kamil Wieckowski | Zatwierdzony |
+| APT-DOC-001 | README: opis projektu, dane, uruchomienie | [README.md](../README.md) | 1.1 | 2026-10-25 | Kamil Wieckowski | Zatwierdzony |
 | APT-DOC-002 | Zasady współtworzenia | [CONTRIBUTING.md](../CONTRIBUTING.md) | 1.0 | 2026-10-25 | Kamil Wieckowski | Zatwierdzony |
 | APT-DOC-003 | Kodeks postępowania | [CODE_OF_CONDUCT.md](../CODE_OF_CONDUCT.md) | 1.0 | 2026-10-25 | Kamil Wieckowski | Zatwierdzony |
-| APT-DOC-004 | Rejestr zmian oprogramowania | [CHANGELOG.md](../CHANGELOG.md) | 1.0 | 2026-10-25 | Kamil Wieckowski | Zatwierdzony |
+| APT-DOC-004 | Rejestr zmian oprogramowania | [CHANGELOG.md](../CHANGELOG.md) | 1.1 | 2026-10-25 | Kamil Wieckowski | Zatwierdzony |
 | APT-DOC-010 | Rejestr dokumentów | [rejestr-dokumentow.md](rejestr-dokumentow.md) | 1.0 | 2026-10-25 | Kamil Wieckowski | Zatwierdzony |
 | APT-DOC-011 | Plan projektu | [plan-projektu.md](plan-projektu.md) | 1.0 | 2026-10-25 | Kamil Wieckowski | Zatwierdzony |
 | APT-DOC-012 | Dane i ich jakość | [dane.md](dane.md) | 1.0 | 2026-10-25 | Kamil Wieckowski | Zatwierdzony |
 | APT-DOC-013 | Architektura | [architektura.md](architektura.md) | 1.0 | 2026-10-25 | Kamil Wieckowski | Zatwierdzony |
-| APT-DOC-014 | Raport końcowy (ISO 21513) | [raport-koncowy.md](raport-koncowy.md) | 1.0 | 2026-10-25 | Kamil Wieckowski | Zatwierdzony |
+| APT-DOC-014 | Raport końcowy (ISO 21513) | [raport-koncowy.md](raport-koncowy.md) | 1.1 | 2026-10-25 | Kamil Wieckowski | Zatwierdzony |
 | APT-DOC-015 | Lessons learned (PMI) | [lessons-learned.md](lessons-learned.md) | 1.0 | 2026-10-25 | Kamil Wieckowski | Zatwierdzony |
 
 ## Historia zmian dokumentu
@@ -37,3 +37,4 @@
 | Wersja | Data | Autor | Opis |
 |---|---|---|---|
 | 1.0 | 2026-10-25 | Kamil Wieckowski | Pierwsza wersja |
+| 1.1 | 2026-10-25 | Kamil Wieckowski | Aktualizacja wersji APT-DOC-001, 004 i 014 po wdrożeniu demo |
