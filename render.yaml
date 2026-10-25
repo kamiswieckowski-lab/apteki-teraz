@@ -1,0 +1,15 @@
+# Blueprint dla Render.com - darmowy hosting z Dockerfile.
+# Dane są pobierane z dane.gov.pl przy każdym starcie kontenera (ok. 3 s).
+services:
+  - type: web
+    name: apteki-teraz
+    runtime: docker
+    plan: free
+    region: frankfurt
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: TZ_NAME
+        value: Europe/Warsaw
+      - key: DANE_GOV_DATASET_ID
+        value: "1925"

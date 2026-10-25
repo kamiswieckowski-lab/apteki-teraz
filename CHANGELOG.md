@@ -20,4 +20,5 @@ według [Semantic Versioning](https://semver.org/lang/pl/).
 - Frontend: wyszukiwarka z filtrem „otwarta teraz”, dniem i godziną, statystyki i lista powiatów bez apteki całodobowej.
 - Testy pytest (37) na zanonimizowanej próbce danych, linter ruff.
 - Docker, docker compose, CI w GitHub Actions (lint, testy, build i smoke test obrazu).
+- Blueprint `render.yaml` do darmowego wdrożenia na Render.com.
 - Dokumentacja: raport końcowy (ISO 21513), lessons learned (PMI), rejestr dokumentów (ISO 10013).

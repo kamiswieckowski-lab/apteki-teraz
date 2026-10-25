@@ -70,9 +70,15 @@ API dane.gov.pl nie wymaga klucza. Projekt nie przechowuje żadnych sekretów.
 
 ### Darmowy hosting (Render.com)
 
-1. Zrób fork repozytorium i zaloguj się na <https://render.com> kontem GitHub.
-2. Wybierz **New → Web Service**, wskaż repozytorium i ustaw *Runtime: Docker*, plan *Free*.
-3. Kliknij *Deploy*. Render zbuduje obraz z `Dockerfile`, a kontener sam pobierze dane i nasłuchuje na `$PORT`.
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/kamiswieckowski-lab/apteki-teraz)
+
+Repozytorium zawiera blueprint [render.yaml](render.yaml) (Docker, plan Free, healthcheck `/health`):
+
+1. Zaloguj się na <https://render.com> kontem GitHub.
+2. Kliknij przycisk powyżej albo wybierz **New → Blueprint** i wskaż repozytorium.
+3. Zatwierdź *Apply*. Render zbuduje obraz z `Dockerfile`, a kontener przy starcie pobierze dane z dane.gov.pl i nasłuchuje na `$PORT`.
+
+Na planie Free usługa usypia po 15 minutach bezczynności, więc pierwsze wejście po przerwie trwa ok. 30–60 s.
 
 Ten sam `Dockerfile` działa na Fly.io, Railway czy Google Cloud Run.
 
