@@ -2,7 +2,8 @@ data/
 .git/
 .github/
 docs/
-tests/
+tests/*
+!tests/fixtures
 **/__pycache__/
 .pytest_cache/
 .ruff_cache/
