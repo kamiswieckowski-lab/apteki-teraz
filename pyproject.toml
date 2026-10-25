@@ -1,0 +1,21 @@
+[project]
+name = "apteki-teraz"
+version = "1.0.0"
+description = "Wyszukiwarka otwartych aptek na podstawie Rejestru Aptek z dane.gov.pl"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Kamil Wieckowski" }]
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+src = ["src", "tests", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S"]
+ignore = ["S101", "S310", "S608", "B905", "E501"]

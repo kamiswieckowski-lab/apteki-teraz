@@ -1,0 +1,17 @@
+services:
+  app:
+    build: .
+    image: apteki-teraz
+    ports:
+      - "${PORT:-8000}:8000"
+    environment:
+      DANE_GOV_API: ${DANE_GOV_API:-https://api.dane.gov.pl/1.4}
+      DANE_GOV_DATASET_ID: ${DANE_GOV_DATASET_ID:-1925}
+      CSV_URL: ${CSV_URL:-}
+      TZ_NAME: ${TZ_NAME:-Europe/Warsaw}
+    volumes:
+      - apteki-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  apteki-data:

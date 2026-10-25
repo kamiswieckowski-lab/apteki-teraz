@@ -1,0 +1,80 @@
+:root {
+  --bg: #f6f8f7;
+  --surface: #ffffff;
+  --text: #1b2421;
+  --muted: #5d6b66;
+  --line: #dde4e1;
+  --accent: #167a5b;
+  --accent-soft: #e3f2ec;
+  --closed: #a33a2c;
+  --closed-soft: #f8e7e4;
+  --radius: 10px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111715;
+    --surface: #19211e;
+    --text: #e6ece9;
+    --muted: #9aa8a2;
+    --line: #2b3632;
+    --accent: #4cc497;
+    --accent-soft: #1d3a2f;
+    --closed: #ef8a7a;
+    --closed-soft: #3a2320;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); line-height: 1.5; }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+a { color: var(--accent); }
+
+header { background: var(--surface); border-bottom: 1px solid var(--line); padding-top: 20px; }
+h1 { margin: 0; font-size: 1.6rem; display: flex; align-items: center; gap: .4em; }
+.cross { color: var(--accent); }
+.lead { margin: .3em 0 1em; color: var(--muted); }
+nav { display: flex; gap: 4px; }
+.tab { border: 0; background: none; padding: 10px 14px; font: inherit; color: var(--muted);
+  border-bottom: 3px solid transparent; cursor: pointer; }
+.tab.active { color: var(--text); border-bottom-color: var(--accent); font-weight: 600; }
+
+main { padding-top: 20px; padding-bottom: 40px; }
+form { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; background: var(--surface);
+  border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
+label { display: flex; flex-direction: column; font-size: .85rem; color: var(--muted); gap: 4px; }
+label.grow { flex: 1 1 260px; }
+input, select { font: inherit; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px;
+  background: var(--bg); color: var(--text); min-height: 40px; }
+.checks { display: flex; gap: 16px; }
+.checks label { flex-direction: row; align-items: center; color: var(--text); font-size: .95rem; }
+.checks input { min-height: 0; }
+
+.summary { color: var(--muted); margin: 16px 0 8px; }
+.results { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; }
+.card-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+.card h3 { margin: 0; font-size: 1.05rem; }
+.addr { margin: 2px 0 8px; color: var(--muted); }
+.badge { font-size: .8rem; padding: 2px 8px; border-radius: 999px; white-space: nowrap; font-weight: 600; }
+.badge.open { background: var(--accent-soft); color: var(--accent); }
+.badge.closed { background: var(--closed-soft); color: var(--closed); }
+.actions { display: flex; flex-wrap: wrap; gap: 14px; font-size: .95rem; }
+details { margin-top: 8px; font-size: .9rem; }
+details table td { padding: 1px 12px 1px 0; }
+.more { display: block; margin: 16px auto; padding: 10px 20px; font: inherit; border-radius: 8px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--text); cursor: pointer; }
+
+.kpi { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; }
+.kpi div { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; }
+.kpi b { display: block; font-size: 1.5rem; }
+.kpi span { color: var(--muted); font-size: .85rem; }
+h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+.hint { color: var(--muted); margin-top: 0; font-size: .9rem; }
+.table-wrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+th, td { text-align: left; padding: 7px 12px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.capitalize { text-transform: capitalize; }
+footer { color: var(--muted); font-size: .85rem; padding-bottom: 32px; }

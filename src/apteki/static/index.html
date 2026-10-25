@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apteki Teraz</title>
+  <meta name="description" content="Sprawdź, która apteka jest otwarta teraz, w nocy lub w niedzielę. Dane: Rejestr Aptek, dane.gov.pl.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' rx='3' fill='%23167a5b'/><path d='M6.5 3h3v3.5H13v3H9.5V13h-3V9.5H3v-3h3.5z' fill='white'/></svg>">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1><span class="cross" aria-hidden="true">✚</span> Apteki Teraz</h1>
+      <p class="lead">Która apteka jest otwarta teraz, w nocy albo w niedzielę? Wyszukiwarka oparta na oficjalnym Rejestrze Aptek.</p>
+      <nav>
+        <button class="tab active" data-tab="szukaj">Szukaj apteki</button>
+        <button class="tab" data-tab="statystyki">Statystyki i białe plamy</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="szukaj" class="panel">
+      <form id="form" autocomplete="off">
+        <label class="grow">Miejscowość, ulica, nazwa lub kod
+          <input id="q" name="q" type="search" placeholder="np. Kraków Długa, 00-950" maxlength="100">
+        </label>
+        <label>Województwo
+          <select id="wojewodztwo" name="wojewodztwo"><option value="">cała Polska</option></select>
+        </label>
+        <label>Kiedy
+          <select id="kiedy" name="kiedy">
+            <option value="teraz">otwarta teraz</option>
+            <option value="">dowolnie</option>
+          </select>
+        </label>
+        <label id="godzina-wrap" hidden>Godzina
+          <input id="godzina" name="godzina" type="time" value="21:00">
+        </label>
+        <div class="checks">
+          <label><input type="checkbox" id="calodobowa"> całodobowa</label>
+          <label><input type="checkbox" id="wysylkowa"> sprzedaż wysyłkowa</label>
+        </div>
+      </form>
+      <p id="summary" class="summary" aria-live="polite"></p>
+      <ul id="results" class="results"></ul>
+      <button id="more" class="more" hidden>Pokaż więcej</button>
+    </section>
+
+    <section id="statystyki" class="panel" hidden>
+      <div id="kpi" class="kpi"></div>
+      <h2>Województwa</h2>
+      <div class="table-wrap"><table id="woj"></table></div>
+      <h2>Powiaty bez żadnej apteki całodobowej</h2>
+      <p class="hint">Według danych z rejestru. Najwięcej aptek na górze: to duże powiaty, w których mimo to w nocy trudno o pomoc.</p>
+      <div class="table-wrap"><table id="plamy"></table></div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>Źródło danych: <a href="https://dane.gov.pl/pl/dataset/1925,rejestr-aptek" rel="noopener">Rejestr Aptek, Ministerstwo Zdrowia, dane.gov.pl</a> <span id="data-date"></span>.
+      Godziny pochodzą z rejestru i mogą być nieaktualne. Przed wyjściem zadzwoń do apteki.
+      Kod: MIT, <a href="https://github.com/kamiswieckowski-lab/apteki-teraz" rel="noopener">GitHub</a>.</p>
+  </footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
