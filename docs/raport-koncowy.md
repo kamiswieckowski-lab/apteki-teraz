@@ -13,6 +13,7 @@ Struktura raportu opiera się na wytycznych zamknięcia projektu z normy **ISO 2
 |---|---|
 | Nazwa | Apteki Teraz |
 | Repozytorium | <https://github.com/kamiswieckowski-lab/apteki-teraz> |
+| Demo | <https://apteki-teraz.onrender.com> |
 | Kierownik / wykonawca | Kamil Wieckowski |
 | Okres realizacji | 1 tydzień (zakończenie 2026-10-25) |
 | Plan bazowy | [APT-DOC-011 Plan projektu](plan-projektu.md) |
@@ -37,6 +38,7 @@ skalę problemu (gdzie brakuje aptek całodobowych).
 | Testy automatyczne (37) i linter | dostarczone | `tests/`, `pyproject.toml` |
 | CI: lint, testy, build i smoke test Dockera | dostarczone | `.github/workflows/ci.yml` |
 | Uruchomienie jedną komendą | dostarczone | `docker compose up` |
+| Publiczne demo | wdrożone | <https://apteki-teraz.onrender.com> (Render, plan Free) |
 | Dokumentacja (ISO 10013, ISO 21513, PMI) | dostarczona | `docs/` |
 
 ### Kluczowe liczby
@@ -82,7 +84,7 @@ skalę problemu (gdzie brakuje aptek całodobowych).
 
 ### Koszty
 
-Projekt nie poniósł kosztów: narzędzia open source, darmowe CI (GitHub Actions) i możliwy darmowy hosting (Render).
+Projekt nie poniósł kosztów: narzędzia open source, darmowe CI (GitHub Actions) i darmowy hosting (Render, plan Free).
 
 ## 5. Wpływ
 

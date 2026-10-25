@@ -11,6 +11,8 @@
 ok. 12 tys. aptek i punktów aptecznych w Polsce, zbudowana na oficjalnym **Rejestrze Aptek**
 z portalu [dane.gov.pl](https://dane.gov.pl/pl/dataset/1925,rejestr-aptek).
 
+**Demo:** <https://apteki-teraz.onrender.com> (darmowy hosting Render; pierwsze wejście po przerwie trwa ok. 30–60 s).
+
 ## Problem społeczny
 
 Kiedy dziecko ma w nocy gorączkę albo w niedzielę kończą się leki na stałe, trzeba szybko znaleźć

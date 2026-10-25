@@ -9,6 +9,10 @@ według [Semantic Versioning](https://semver.org/lang/pl/).
 
 ## [Unreleased]
 
+### Dodano
+
+- Publiczne demo na Render: https://apteki-teraz.onrender.com, link w README i raporcie końcowym.
+
 ## [1.0.0] - 2026-10-25
 
 ### Dodane
